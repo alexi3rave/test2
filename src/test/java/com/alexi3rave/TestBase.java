@@ -1,6 +1,8 @@
 package com.alexi3rave;
 
 import com.codeborne.selenide.Configuration;
+import helpers.Attach;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -16,10 +18,18 @@ public class TestBase {
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
         DesiredCapabilities capabilities = new DesiredCapabilities();
-          capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
                 "enableVideo", true
         ));
-    Configuration.browserCapabilities = capabilities;
+        Configuration.browserCapabilities = capabilities;
+    }
+
+    @AfterEach
+    void addAttachments() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
     }
 }
