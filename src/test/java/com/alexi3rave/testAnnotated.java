@@ -4,12 +4,13 @@
  import com.codeborne.selenide.WebDriverRunner;
  import com.codeborne.selenide.impl.Screenshot;
  import io.qameta.allure.Attachment;
+ import org.junit.jupiter.api.Tag;
  import org.junit.jupiter.api.Test;
  import org.openqa.selenium.OutputType;
  import org.openqa.selenium.TakesScreenshot;
  import org.openqa.selenium.WebDriver;
 
-
+ @Tag("remote")
  public class testAnnotated extends TestBase {
 
      private static final String REPOSITORY = "alexi3rave/test";

@@ -3,9 +3,10 @@
  import com.alexi3rave.steps.WebSteps;
  import io.qameta.allure.*;
  import org.junit.jupiter.api.DisplayName;
+ import org.junit.jupiter.api.Tag;
  import org.junit.jupiter.api.Test;
 
-
+ @Tag("remote")
  public class testAnnotatedWithLabel extends TestBase {
 
 
