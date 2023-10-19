@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 
- public class SteplAMBDATest {
+ public class SteplAMBDATest extends TestBase {
 
     private static final String REPOSITORY = "alexi3rave/test";
     @Test

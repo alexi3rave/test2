@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import com.alexi3rave.steps.WebSteps;
 
 
- public class SteplAnnotatedTest {
+ public class SteplAnnotatedTest extends TestBase {
 
      private static final String REPOSITORY = "alexi3rave/test";
 

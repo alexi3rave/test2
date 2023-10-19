@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class SelenideTest {
+public class SelenideTest extends TestBase {
     @Test
     public void testGitHub() {
         SelenideLogger.addListener("allure", new AllureSelenide());

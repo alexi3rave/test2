@@ -10,7 +10,7 @@
  import org.openqa.selenium.WebDriver;
 
 
- public class testAnnotated {
+ public class testAnnotated extends TestBase {
 
      private static final String REPOSITORY = "alexi3rave/test";
 

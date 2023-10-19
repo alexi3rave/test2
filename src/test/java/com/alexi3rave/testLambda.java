@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 
- public class testLambda {
+ public class testLambda extends TestBase {
 AllureLifecycle lifecycle = Allure.getLifecycle();
     private static final String REPOSITORY = "alexi3rave/test";
     @Test

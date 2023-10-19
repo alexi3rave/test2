@@ -6,7 +6,7 @@
  import org.junit.jupiter.api.Test;
 
 
- public class testAnnotatedWithLabel {
+ public class testAnnotatedWithLabel extends TestBase {
 
 
      private static final String REPOSITORY = "alexi3rave/test";
