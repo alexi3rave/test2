@@ -1,6 +1,6 @@
 {
   "base": {
-    "project": "${JOB_BASE_NAME}",
+    "project": "$GitHub tests",
     "environment": "some env",
     "comment": "some comment",
     "reportLink": "${BUILD_URL}",
